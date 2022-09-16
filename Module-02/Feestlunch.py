@@ -20,8 +20,7 @@ berekening_c = kortingsbon * aantal_c
 
 totale_prijs = berekening_a + berekening_b - berekening_c
 totale_prijs = round(totale_prijs, 2);
-print("totale prijs voor de feestlunch is", totale_prijs, "euro voor de croissantjes en stokbroden")
-
+print("De feestlunch kost je bij de bakker", totale_prijs, "euro voor de 17 croissantjes en de 2 stokbroden als de 3 kortingsbonnen nog geldig zijn!")
 
 
 
