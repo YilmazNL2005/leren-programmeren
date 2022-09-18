@@ -16,11 +16,11 @@ print(f"de totale prijs voor de tickets is {ticket_p_p * aantal_personen} euro e
 
 #totaal_a = round (totaal_a, 2);
 #totaal_b = round (totaal_b, 2);
-print(totaal_a + totaal_b, "euro")
+print("Dit geweldige dagje-uit met 4 mensen in de Speelhal met 45 minuten VR kost je maar", totaal_a + totaal_b, "euro.")
 
 #totale_prijs = round (totale_prijs, 2);
 
-
+#Dit geweldige dagje-uit met 4 mensen in de Speelhal met 45 minuten VR kost je maar 44.44 euro
 
 
 
