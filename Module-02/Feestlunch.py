@@ -29,16 +29,3 @@ print("De feestlunch kost je bij de bakker", totale_prijs, "euro voor de", aanta
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
