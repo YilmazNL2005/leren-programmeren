@@ -6,12 +6,15 @@
 
 a = int(input("Voer een getal in."))
 b = int(input("Voer een lager getal in."))
-max = a
+
 
 if a > b:
     print("a is het grootste getal")
+    max = a
 
-
+elif a < b:
+    print("a is het kleinste getal")
+    min = a
 
 
 
