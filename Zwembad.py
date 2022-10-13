@@ -9,10 +9,13 @@
 
 print("36", "\n")
 
-print("Offerte voor een zwembad van 8 bij 3 bij 1,5 meter (inhoud: xx m3)")
-print("Uitgraven:            €xxx,xx ")
-print("Afvoeren grond:       €xxx,xx ")
-print("Totaal:               €xxx,xx")
+#8 bij 3 bij 1,5 meter
+
+
+print("Offerte voor een zwembad van 8 bij 3 bij 1,5 meter (inhoud: 36 m3)")
+print("Uitgraven:            €900,00 ")
+print("Afvoeren grond:      €1170,00 ")
+print("Totaal:              €2070,00 ")
 
 
 
