@@ -7,11 +7,12 @@
 #
 #
 
-print("36")
+print("36", "\n")
 
-
-
-
+print("Offerte voor een zwembad van 8 bij 3 bij 1,5 meter (inhoud: xx m3)")
+print("Uitgraven:            €xxx,xx ")
+print("Afvoeren grond:       €xxx,xx ")
+print("Totaal:               €xxx,xx")
 
 
 
