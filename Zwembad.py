@@ -9,13 +9,15 @@
 
 print("36", "\n")
 
-#8 bij 3 bij 1,5 meter
-
+#8 bij 3 bij 1,5 meter.
+#60 km van Joris z'n bedrijf.
 
 print("Offerte voor een zwembad van 8 bij 3 bij 1,5 meter (inhoud: 36 m3)")
-print("Uitgraven:            €900,00 ")
+print("Uitgraven:           € 900,00 ")
 print("Afvoeren grond:      €1170,00 ")
-print("Totaal:              €2070,00 ")
+print("Voorrijkosten:       € 373,00 ")
+print("Totaal:              €2443,00 ")
+
 
 
 
