@@ -43,7 +43,7 @@ vraag_acrobatiek = int(input("Hoeveel jaar praktijkervaring heeft u met acrobati
 vraag_lichaamsgewicht = int(input("Wat is uw lichaamsgewicht in kg? "))
 vraag_lengte = int(input("Hoelang bent u in cm? "))
 
-if vraag_geslacht == "man" and vraag_snor == "ja" and vraag_breedte_snor >= 10 and vraag_diploma == "ja" and vraag_rijbewijs == "ja" and vraag_hoed == "ja" and vraag_certificaat == "ja" and vraag_dieren_dressuur >= 4 and vraag_jongleren >= 5 and vraag_acrobatiek >= 3 and 120 >= vraag_lichaamsgewicht >= 90 and 220 >= vraag_lengte >= 150 or vraag_geslacht == "vrouw" and vraag_haarkleur == "rood krulhaar" and vraag_lengte_haar >= 20 and vraag_diploma == "ja" and vraag_rijbewijs == "ja" and vraag_hoed == "ja" and vraag_certificaat == "ja" and vraag_dieren_dressuur >= 4 and vraag_jongleren >= 5 and vraag_acrobatiek >= 3 and 120 >= vraag_lichaamsgewicht >= 90 and 220 >= vraag_lengte >= 150:
+if (vraag_geslacht == "man" and vraag_snor == "ja" and vraag_breedte_snor >= 10 or vraag_geslacht == "vrouw" and vraag_haarkleur == "rood krulhaar" and vraag_lengte_haar >= 20) and vraag_diploma == "ja" and vraag_rijbewijs == "ja" and vraag_hoed == "ja" and vraag_certificaat == "ja" and (vraag_dieren_dressuur >= 4 or vraag_jongleren >= 5 or vraag_acrobatiek >= 3) and 120 >= vraag_lichaamsgewicht >= 90 and 220 >= vraag_lengte >= 150:
     print("Gefeliciteerd, u voldoet aan alle eisen en bent bij deze aangenomen. ")
 
 else:
