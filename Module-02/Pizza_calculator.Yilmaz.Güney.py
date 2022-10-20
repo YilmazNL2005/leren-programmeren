@@ -6,30 +6,47 @@
 
 
 
-
-formaat_klein = "klein"
-formaat_middel = "middel"
-formaat_groot = "groot"
+aantal_klein = 0
+aantal_middel = 0
+aantal_groot = 0
 
 prijs_klein = 3.99
-prijs_middel = 6.99 
-prijs_groot = 11.99 
+prijs_middel = 6.99
+prijs_groot = 11.99
 
+#Stop programma
+#Blijven loopen tot er een goed antwoord gegeven is.
+#Default value
 
+while True:
+    try:
+        aantal_klein = int(input("Hoeveel kleine pizza's wil je? "))
+    except ValueError:
+        print("Dit is geen getal, maar een woord of letter.")
+        continue
+    try:
+        aantal_middel = int(input("Hoeveel middel pizza's wil je? "))
+    except ValueError:
+        print("Dit is geen getal, maar een woord of letter.")
+        continue
+    try:
+        aantal_groot = int(input("Hoeveel grote pizza's wil je? "))
+    except ValueError:
+        print("Dit is geen getal, maar een woord of letter.")
+        continue
 
-aantal_klein = int(input("Hoeveel kleine pizza's wil je? "))
-aantal_middel = int(input("Hoeveel middel pizza's wil je? "))
-aantal_groot = int(input("Hoeveel grote pizza's wil je? "))
+    else:
+        print("Bedankt voor je bestelling.")
+        break 
 
 totaal_prijs = prijs_klein * aantal_klein + prijs_middel * aantal_middel + prijs_groot * aantal_groot 
 
-print("_____________________________________________________", "\n")
+print("_____________________________________________________\n")
 
-print(f" Kleine pizza's ", aantal_klein, "stuks.      ", "Prijs   ", {prijs_klein * aantal_klein}, " euro.")
-print(f" Middel pizza's ", aantal_middel, "stuks.      ", "Prijs   ", {prijs_middel * aantal_middel}, "euro.")
-print(f" Grote  pizza's ", aantal_groot, "stuks.      ", "Prijs   ", {prijs_groot * aantal_groot}, "euro.", "\n")
+print(f" Kleine pizza's  {aantal_klein} stuks.        Prijs    {prijs_klein * aantal_klein}  euro.")
+print(f" Middel pizza's  {aantal_middel} stuks.        Prijs    {prijs_middel * aantal_middel} euro.")
+print(f" Grote  pizza's  {aantal_groot} stuks.        Prijs    {prijs_groot * aantal_groot} euro. \n")
 
-print(" Totaal                                  ",                       totaal_prijs," euro. ")
+print(f" Totaal                                   {totaal_prijs} euro. ")
 
-print("_____________________________________________________", "\n")
-
+print("_____________________________________________________\n")
