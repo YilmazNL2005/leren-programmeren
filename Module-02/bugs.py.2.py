@@ -26,7 +26,7 @@ favoriteColor = input('En wat is je favoriete kleur? ')
 trueOrFalse = str(random.randint(0,1))
 if True:
     print('Ik vind dat ook een mooie kleur!')
-elif not False: 
+elif False: 
     print('TBH, ik hou niet zo van {}...'.format(favoriteColor))
 
 num1 = random.randint(1,10)
@@ -35,10 +35,10 @@ antwoord_som = num1 + num2
 try:
     number = int(input(f"En weet jij wat {num1} + {num2} is? ")) 
     if int(number == num1 + num2):
-        print('Dat is juist')
-    else: 
-        print('Dat is fout!')
+        print("Dat is juist")
+    elif int(number < num1 + num2 or number > num1 + num2):
+        print("Dat is fout!")
 
 except:
-    print("Nee dat klopt niet {}".format(name))
+    print("Nee dat is geen nummer {}".format(name))
 
