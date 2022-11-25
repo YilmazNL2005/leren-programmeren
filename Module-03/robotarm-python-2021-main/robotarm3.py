@@ -4,15 +4,11 @@ robotArm = RobotArm('exercise 3')
 
 # Jouw python instructies zet je vanaf hier:
 
-for x in range(3):
+for x in range(4):
     robotArm.grab()
     robotArm.moveRight()
     robotArm.drop()
     robotArm.moveLeft()
-    if x == 2:
-        robotArm.grab()
-        robotArm.moveRight()
-        robotArm.drop()
 
 
 # Na jouw code wachten tot het sluiten van de window:

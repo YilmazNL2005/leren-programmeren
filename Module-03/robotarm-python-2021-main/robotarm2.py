@@ -7,28 +7,15 @@ robotArm = RobotArm('exercise 2')
 for x in range(3):
     if x == 0:
         robotArm.grab()
-        robotArm.moveRight()
-        robotArm.moveRight()
-        robotArm.moveRight()
-        robotArm.moveRight()
-        robotArm.moveRight()
-        robotArm.moveRight()
-        robotArm.moveRight()
-        robotArm.moveRight()
-        robotArm.moveRight()
+        for amount in range(9):
+            robotArm.moveRight()
         robotArm.drop()
     if x == 1:
-        robotArm.moveLeft()
-        robotArm.moveLeft()
-        robotArm.moveLeft()
-        robotArm.moveLeft()
-        robotArm.moveLeft()
+        for z in range(5):
+            robotArm.moveLeft()
         robotArm.grab()
-        robotArm.moveRight()
-        robotArm.moveRight()
-        robotArm.moveRight()
-        robotArm.moveRight()
-        robotArm.moveRight()
+        for a in range(5):
+            robotArm.moveRight()
         robotArm.drop()
     if x == 2:
         robotArm.moveLeft()
