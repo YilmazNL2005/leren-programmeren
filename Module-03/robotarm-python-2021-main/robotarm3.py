@@ -3,24 +3,16 @@ from RobotArm import RobotArm
 robotArm = RobotArm('exercise 3')
 
 # Jouw python instructies zet je vanaf hier:
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
-robotArm.moveLeft()
 
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
-robotArm.moveLeft()
-
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
-robotArm.moveLeft()
-
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
+for x in range(3):
+    robotArm.grab()
+    robotArm.moveRight()
+    robotArm.drop()
+    robotArm.moveLeft()
+    if x == 2:
+        robotArm.grab()
+        robotArm.moveRight()
+        robotArm.drop()
 
 
 # Na jouw code wachten tot het sluiten van de window:
