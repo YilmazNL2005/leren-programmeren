@@ -11,8 +11,8 @@ for i in range(5):
         robotArm.grab()
         robotArm.moveLeft()
         robotArm.drop()
-    for i in range(0, 2):
-        robotArm.moveRight()
+    robotArm.moveRight()
+    robotArm.moveRight()
 
 # for x in range(3):
 #     if x == 0:

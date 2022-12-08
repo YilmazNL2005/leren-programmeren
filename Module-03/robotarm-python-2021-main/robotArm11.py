@@ -6,19 +6,36 @@ robotArm = RobotArm('exercise 11')
 # Scan______ Geeft de kleur van het blok dat de robotarm op dat moment vast heeft. 
 # Indien de robotarm geen blok vast heeft geeft hij als kleur de waarde '', dus een lege string.
 
-verplaatsingen = 1
-while verplaatsingen < 8:
+
+for y in range(8):
+    robotArm.moveRight()
+for y in range(9):
     robotArm.grab()
-    robotArm.scan()
-    print(robotArm.scan())
-    if robotArm.scan() == "white":
-        for x in range(1):
-            robotArm.moveRight()
+    kleur = robotArm.scan()
+    if kleur == "white":
+        robotArm.moveRight()
         robotArm.drop()
+        if y < 8:
+            robotArm.moveLeft()
+            robotArm.moveLeft()
     else:
         robotArm.drop()
-        verplaatsingen = verplaatsingen + 1
-    robotArm.moveRight()
+        if y < 8:
+            robotArm.moveLeft()
+
+#verplaatsingen = 1
+# while verplaatsingen < 8:
+#     robotArm.grab()
+#     robotArm.scan()
+#     print(robotArm.scan())
+#     if colour == "white":
+#         for x in range(1):
+#             robotArm.moveRight()
+#         robotArm.drop()
+#     else:
+#         robotArm.drop()
+#         verplaatsingen = verplaatsingen + 1
+#     robotArm.moveRight()
         
         
 
