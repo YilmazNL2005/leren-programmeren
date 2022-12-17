@@ -5,9 +5,8 @@ robotArm.randomLevel(1,7)
 
 # Jouw python instructies zet je vanaf hier:
 verplaatsingen = 1
-while verplaatsingen < 7:
+while verplaatsingen < 8:
     robotArm.grab()
-    robotArm.scan()
     if robotArm.scan() == str(""):
         verplaatsingen = 10
         terug = 10
