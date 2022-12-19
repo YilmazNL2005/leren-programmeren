@@ -5,7 +5,7 @@ import random
 # ergindebuurt = "Je bent erg warm."
 # indebuurt = "Je bent warm."
 score = 0
-ronde = 0
+ronde = 1
 kansen = 10
 MAXRONDES = 20
 num1 = random.randint(1, 1000)
@@ -20,13 +20,13 @@ while ronde != MAXRONDES and kansen > 0:
                 print("ronde", ronde)
                 print("Aantal punten", score)
                 print("Aantal kansen", kansen)
-                print(num1)
+                #print(num1)
                 raad = int(input("Noem een getal tussen de 1 en 1000. "))
-                print(num1)
+                #print(num1)
                 if raad != num1:
                     kansen-= 1
                     verschil = abs(raad - num1)
-                    print(verschil)
+                    #print(verschil)
                     if raad < num1:
                         print("Het is hoger.")
                     if raad > num1:
